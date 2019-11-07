@@ -11,14 +11,6 @@ class Fita:
     def add_fita(self,elm):
         self.fita_list.append(elm)
 
-
-    def query_fita(self,index):
-        try:
-            index[0] = index[0] + 1
-            return self.fita_list[index[0]]
-        except IndexError as identifier:
-            return -1
-
     def endoftape(self,index):
         if index[0] == len(self.fita_list):
             return True

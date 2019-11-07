@@ -37,8 +37,8 @@ if __name__ == "__main__":
     componente = Componente()
     fita = Fita()
 
-                     #0      1      2       3      4         5           6
-    lista_objects = [fita,estoque,esteira,"ayylmao"]#,torno,qualidade,manutencao,componente]
+                      #0      1      2       3      4         5           6
+    lista_objects = [fita,estoque,esteira,"ayylmao"] #,torno,qualidade,manutencao,componente]
 
     estoque_thread = threading.Thread(target=estoque.mainthread, args=(1,lista_objects))
     esteira_thread = threading.Thread(target=esteira.mainthread, args=(1,lista_objects))
@@ -64,4 +64,3 @@ if __name__ == "__main__":
     #   indml = input()
     #   print(indml)
     # x.join()
-
