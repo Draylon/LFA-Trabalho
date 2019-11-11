@@ -1,7 +1,10 @@
 class Fita:
-    def __init__(self):
+    def __init__(self,string):
         self.fita_list = []
         self.valid = True
+        if len(string) > 0:
+            for i in range(len(string.split(","))):
+                self.fita_list.append(string.split(",")[i])
     def switch_valid(self):
         if self.valid:
             self.valid = False

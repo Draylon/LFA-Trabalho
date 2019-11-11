@@ -1,8 +1,9 @@
-start,parado,consulta_estoque,consulta_esteira,colocar_componente,processar_componente
-
-start->parado
-parado -> consulta_estoque
-consulta_estoque -> consulta_esteira
-consulta_esteira->colocar_componente
-colocar_componente->processar_componente
-processar_componente-> parado
+parado
+parado,consulta_estoque,consulta_esteira,colocar_componente,processar_componente,parar_esteira
+parado;a -> consulta_estoque
+consulta_estoque;a -> consulta_esteira
+consulta_esteira;b->parar_esteira
+consulta_esteira;->colocar_componente
+colocar_componente;->processar_componente
+processar_componente;-> parado
+parado,parar_esteira
