@@ -35,10 +35,11 @@ if __name__ == "__main__":
     #manutencao = Manutencao()
     peca = Peca()
     componente = Componente()
-    fita = Fita()
+    fita_geral = Fita()
+    producao = []
 
                       #0      1      2       3      4         5           6
-    lista_objects = [fita,estoque,esteira,"ayylmao"] #,torno,qualidade,manutencao,componente]
+    lista_objects = [fita_geral,estoque,esteira,"ayylmao"] #,torno,qualidade,manutencao,componente]
 
     estoque_thread = threading.Thread(target=estoque.mainthread, args=(1,lista_objects))
     esteira_thread = threading.Thread(target=esteira.mainthread, args=(1,lista_objects))

@@ -1,0 +1,8 @@
+parado,andando
+parado,andando,em_uso
+parado      ;parar_esteira      ->em_uso
+parado      ;continua_esteira   ->andando
+andando     ;parar_esteira      ->em_uso
+andando     ;continua_esteira   ->andando
+em_uso      ;libera_esteira     ->andando
+parado,andando,em_uso

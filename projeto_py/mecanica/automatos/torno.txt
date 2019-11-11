@@ -1,0 +1,11 @@
+parado
+parado,conferir_esteira,parar_esteira,pegar_cmp,cmp_na_maquina,processando_cmp
+
+parado              ;chegou_cmp         ->conferir_esteira
+conferir_esteira    ;esteira_andando    ->parar_esteira
+conferir_esteira    ;esteira_parada     ->pegar_cmp
+parar_esteira       ;esteira_parada     ->pegar_cmp
+parar_esteira       ;esteira_andando    ->conferir_esteira
+pegar_cmp           ;cmp_recolhido      ->cmp_na_maquina
+cmp_na_maquina      ;processar_cmp      ->processando_cmp
+parado

@@ -1,8 +1,0 @@
-buffer_start
-buffer_start,peca1q1,peca1q2,peca1q3,peca2q1,peca2q2,peca2q3
-buffer_start->peca1q1
-buffer_start->peca2q1
-peca1q1,peca1q2,peca2q1,peca2q2->buffer_start
-peca1q1->peca1q2->peca1q3
-peca2q1->peca2q2->peca2q3
-peca1q1,peca1q2,peca2q1,peca2q2

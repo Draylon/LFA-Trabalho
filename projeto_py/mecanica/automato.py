@@ -6,12 +6,13 @@ class Automato:
         inicial = fl[0].strip()
         estados = fl[1].strip()
         for i in range(len(fl)-3):
-            transicoes = fl[i+2].split("->")
-            p_1 = transicoes[0].split(",")
-            for i in range(len(p_1)):
-                p_2 = p_1[i].split(";")
-                #funcaoprograma.append({"de": p_2[0],"simbolo":p_2[1],"para":transicoes[1]})
-                funcaoprograma.append([p_2[0].strip(),p_2[1].strip(),transicoes[1].strip()])
+            if(len(i) > 0):
+                transicoes = fl[i+2].split("->")
+                p_1 = transicoes[0].split(",")
+                for i in range(len(p_1)):
+                    p_2 = p_1[i].split(";")
+                    #funcaoprograma.append({"de": p_2[0],"simbolo":p_2[1],"para":transicoes[1]})
+                    funcaoprograma.append([p_2[0].strip(),p_2[1].strip(),transicoes[1].strip()])
         terminais = fl[len(fl)-1].strip()
         f.close()
         self.estados = estados
