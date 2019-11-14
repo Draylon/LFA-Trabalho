@@ -1,4 +1,11 @@
-parado;peca1->instancia_peca1
-instancia_peca1;estoque_avaliable->estoque_check
-estoque_check;manutencao_feito->inicializado_peca1
-inicializado_peca1;
+parado
+parado,init_1,init2
+parado;peca1->init_1
+parado;peca2->init_2
+init_1;peca1&peca1->init_1
+init_1;peca2&peca2->init_1
+init_2;peca1&peca1->init_2
+init_2;peca2&peca2->init_2
+init_1;prod_peca1->parado
+init_2;prod_peca2->parado
+parado,init_1,init_2
