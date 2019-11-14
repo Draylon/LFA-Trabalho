@@ -1,4 +1,4 @@
 parado;peca1->instancia_peca1
 instancia_peca1;estoque_avaliable->estoque_check
-estoque_check;manutencao_feito->funcionamento
-funcionamento;
+estoque_check;manutencao_feito->inicializado_peca1
+inicializado_peca1;
