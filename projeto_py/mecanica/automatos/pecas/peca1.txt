@@ -1,0 +1,9 @@
+parado
+parado,estoque_cmp,estoque_pronto,estoque_descarte,qualidade_cmp,qualidade_peca,torno
+parado;peca1->estoque_cmp
+estoque_cmp;observe->qualidade_cmp
+qualidade_cmp;s->torno
+qualidade_cmp;n->estoque_descarte
+torno;pronto->qualidade_peca
+qualidade_peca;s->estoque_pronto
+qualidade_peca;n->estoque_descarte

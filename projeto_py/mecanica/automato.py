@@ -6,7 +6,7 @@ class Automato:
         inicial = fl[0].strip()
         estados = fl[1].strip()
         for i in range(len(fl)-3):
-            if(len(i) > 0):
+            if len(fl[i+2]) > 0:
                 transicoes = fl[i+2].split("->")
                 p_1 = transicoes[0].split(",")
                 for i in range(len(p_1)):
@@ -50,6 +50,6 @@ if __name__ == "__main__":
     import sys,os
     sys.path.append(os.path.dirname("../"))
     sys.path.append(os.path.dirname(".."))
-    from fita import *
+    from projeto_py.mecanica.fita import *
     d=Automato(sys.argv[1])
     print("".join(d.avaliar_fita(Fita("a,a,b"))))

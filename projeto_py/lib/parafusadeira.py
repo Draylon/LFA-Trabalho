@@ -1,4 +1,4 @@
-class Manutencao:
+class Parafusadeira:
     def __init__(self):
         self.movimento = False
     

@@ -1,0 +1,4 @@
+parado;peca1->instancia_peca1
+instancia_peca1;estoque_avaliable->estoque_check
+estoque_check;manutencao_feito->funcionamento
+funcionamento;

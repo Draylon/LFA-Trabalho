@@ -19,6 +19,9 @@ class Fita:
             return True
         else:
             return False
+    
+    def fita_len(self):
+        return len(self.fita_list)
 
 #=================================================
 

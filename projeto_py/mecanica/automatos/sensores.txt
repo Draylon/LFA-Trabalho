@@ -1,0 +1,11 @@
+parado
+parado,torno,parafusadeira,qualidade,estoque
+parado;torno->torno
+parado;parafusadeira->parafusadeira
+parado;qualidade->qualidade
+parado;estoque->estoque
+torno;parafusadeira->parafusadeira
+parafusadeira;qualidade->qualidade
+qualidade;estoque->estoque
+estoque;torno->torno
+torno,parafusadeira,qualidade,estoque
