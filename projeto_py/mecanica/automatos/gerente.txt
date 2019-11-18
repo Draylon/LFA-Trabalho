@@ -1,5 +1,6 @@
 parado
 parado,init_1,init2
+peca1,peca2,prod_peca1,prod_peca2
 parado;peca1->init_1
 parado;peca2->init_2
 init_1;peca1&peca1->init_1
