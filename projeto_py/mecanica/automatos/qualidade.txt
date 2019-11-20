@@ -1,5 +1,5 @@
 parado
-parado,chegar_cmp,conferir_esteira,parar_esteira,pegar_cmp,cmp_na_quald,processando_cmp,sign_torno
+parado,chegar_cmp,parar_esteira,pegar_cmp,cmp_na_quald,processando_cmpq,sign_torno
 qualidade_load,chegou_cmp,esteira_andando,cmp_alinhado_quald,esteira_parada,cmp_recolhido,processar_cmp,cmp_passa,sign_torno
 
 parado;esteira_andando&esteira_andando->parado

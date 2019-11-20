@@ -22,11 +22,11 @@ python principal.py
 
 ##Automatos
 
-![controle]()
-![estoque]()
-![esteira]()
-![torno]()
-![qualidade]()
+![controle](https://github.com/Draylon/LFA-Trabalho/blob/master/automatos/Controle.png)
+![estoque](https://github.com/Draylon/LFA-Trabalho/blob/master/automatos/Estoque.jpg)
+![esteira](https://github.com/Draylon/LFA-Trabalho/blob/master/automatos/Esteira.jpg)
+![torno](https://github.com/Draylon/LFA-Trabalho/blob/master/automatos/torno.jpg)
+![qualidade](https://github.com/Draylon/LFA-Trabalho/blob/master/automatos/Qualidade.png)
 ![parafusadeira](https://github.com/Draylon/LFA-Trabalho/blob/master/automatos/parafusadeira.png)
 
 ##Comandos

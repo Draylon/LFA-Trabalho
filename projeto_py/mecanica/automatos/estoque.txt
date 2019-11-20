@@ -1,5 +1,5 @@
 parado
-parado,consulta_estoque,colocar_componente,processar_componente,parar_esteira,componente_set
+parado,consulta_estoque,colocar_componente,parar_esteira,componente_set
 prod_peca1,tem_cmp,indisp,andando,esteira_parada,esteira_andando,andando,cmp_colocado,cmp_alinhado_quald
 parado              ;prod_peca1&prod_peca1  -> consulta_estoque
 consulta_estoque    ;prod_peca1&prod_peca1  -> consulta_estoque
