@@ -22,12 +22,12 @@ python principal.py
 
 ##Automatos
 
-    ![controle]()
-    ![estoque]()
-    ![esteira]()
-    ![torno]()
-    ![qualidade]()
-    ![parafusadeira](https://github.com/Draylon/LFA-Trabalho/blob/master/automatos/parafusadeira.png)
+![controle]()
+![estoque]()
+![esteira]()
+![torno]()
+![qualidade]()
+![parafusadeira](https://github.com/Draylon/LFA-Trabalho/blob/master/automatos/parafusadeira.png)
 
 ##Comandos
 
