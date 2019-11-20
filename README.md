@@ -27,7 +27,7 @@ python principal.py
     ![esteira]()
     ![torno]()
     ![qualidade]()
-    ![parafusadeira]()
+    ![parafusadeira](https://github.com/Draylon/LFA-Trabalho/blob/master/automatos/parafusadeira.png)
 
 ##Comandos
 
