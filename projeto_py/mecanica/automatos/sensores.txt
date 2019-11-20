@@ -1,5 +1,6 @@
 parado
 parado,torno,parafusadeira,qualidade,estoque
+torno,parafusadeira,qualidade,estoque
 parado;torno->torno
 parado;parafusadeira->parafusadeira
 parado;qualidade->qualidade

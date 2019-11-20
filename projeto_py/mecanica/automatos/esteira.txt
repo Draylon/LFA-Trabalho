@@ -1,10 +1,17 @@
-parado,andando
+parado
 parado,andando,em_uso
-parado      ;parar_esteira      ->em_uso
-parado      ;continua_esteira   ->andando
-andando     ;parar_esteira      ->em_uso
-andando     ;continua_esteira   ->andando
-em_uso      ;libera_esteira     ->andando
-em_uso      ;parar_esteira      ->em_uso
-em_uso      ;continua_esteira   ->em_uso
+parar_esteira,continua_esteira,libera_esteira
+parado      ;parar_esteira&esteira_parada       ->em_uso
+parado      ;continua_esteira&esteira_andando   ->andando
+
+parado      ;esteira_parada&esteira_parada      ->em_uso
+parado      ;esteira_andando&esteira_andando    ->em_uso
+
+andando     ;parar_esteira&esteira_parada       ->em_uso
+andando     ;continua_esteira&esteira_andando   ->andando
+em_uso      ;libera_esteira&esteira_andando     ->andando
+em_uso      ;parar_esteira                      ->em_uso
+em_uso      ;continua_esteira                   ->em_uso
+
+em_uso      ;esteira_andando&esteira_andando    ->andando
 parado,andando,em_uso

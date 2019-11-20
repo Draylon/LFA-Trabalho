@@ -1,10 +1,14 @@
 parado
-parado,consulta_estoque,consulta_esteira,colocar_componente,processar_componente,parar_esteira
-parado              ;fazer_1        -> consulta_estoque
-consulta_estoque    ;tem_cmp        -> consulta_esteira
-consulta_esteira    ;andando        ->parar_esteira
-consulta_esteira    ;parada         ->colocar_componente
-parar_esteira       ;andando        ->parar_esteira
-parar_esteira       ;parada         ->colocar_componente
-colocar_componente  ;cmp_colocado   ->movimentar_esteira
-parado,parar_esteira
+parado,consulta_estoque,colocar_componente,processar_componente,parar_esteira,componente_set
+prod_peca1,tem_cmp,indisp,andando,esteira_parada,esteira_andando,andando,cmp_colocado,cmp_alinhado_quald
+parado              ;prod_peca1&prod_peca1  -> consulta_estoque
+consulta_estoque    ;prod_peca1&prod_peca1  -> consulta_estoque
+consulta_estoque    ;indisp&fail_estoque    -> parado
+consulta_estoque    ;tem_cmp&tem_cmp  -> parar_esteira
+parar_esteira       ;parar_esteira&parar_esteira    -> parar_esteira
+parar_esteira    ;andando&parar_esteira     ->parar_esteira
+parar_esteira    ;esteira_parada&esteira_parada ->colocar_componente
+colocar_componente  ;cmp_colocado&cmp_colocado ->movimentar_esteira
+movimentar_esteira;esteira_andando&esteira_andando -> componente_set
+componente_set;cmp_alinhado_quald&cmp_alinhado_quald->parado
+parado,parar_esteira,consulta_estoque,colocar_componente,movimentar_esteira,componente_set

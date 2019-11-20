@@ -1,4 +1,5 @@
 class Fita:
+    
     def __init__(self,string):
         self.fita_list = []
         self.valid = True

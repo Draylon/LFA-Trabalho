@@ -8,8 +8,8 @@ class Automato:
         transicoes = fl[2].strip()
 
         for i in range(len(fl)-4):
-            if len(fl[i+3]) > 0:
-                proc_transic = fl[i+3].split("->")
+            if len(fl[i+3].strip()) > 0:
+                proc_transic = fl[i+3].strip().split("->")
                 p_1 = proc_transic[0].split(",")
                 for i in range(len(p_1)):
                     p_2 = p_1[i].split(";")
