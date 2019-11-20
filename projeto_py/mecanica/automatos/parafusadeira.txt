@@ -1,18 +1,18 @@
 parado
-parado,chegar_cmp,conferir_esteira,parar_esteira,pegar_cmp,cmp_na_parafusadeira,processando_cmp,sign_qualidade
-parafusadeira_load,chegou_cmp,esteira_andando,cmp_alinhado_qualt,esteira_parada,cmp_recolhido,processar_cmp,cmp_passa,sign_qualidade
+parado,chegar_cmp,parar_esteira,pegar_cmp,cmp_na_parafusadeira,processando_cmpp,sign_qualidade
+parafusadeira_load,chegou_cmp,esteira_andando,cmp_alinhado_parafusadeira,esteira_parada,cmp_recolhido,processar_cmp,cmp_passa,sign_qualidade
 
 parado;esteira_andando&esteira_andando->parado
 parado;esteira_parada&esteira_parada->parado
 parado      ;parafusadeira_load  -> chegar_cmp
-parado      ;cmp_alinhado_qualt&cmp_alinhado_qualt->parar_esteira
+parado      ;cmp_alinhado_parafusadeira&cmp_alinhado_parafusadeira->parar_esteira
 
 parar_esteira       ;parar_esteira&parar_esteira    -> parar_esteira
 parar_esteira    ;andando&parar_esteira     ->parar_esteira
 parar_esteira    ;esteira_parada&esteira_parada ->pegar_cmp
 
 pegar_cmp           ;cmp_recolhido&cmp_recolhido      ->cmp_na_quald
-cmp_na_quald      ;processar_cmp&processar_cmp      ->processando_cmpq
+cmp_na_quald      ;processar_cmpp&processar_cmpp      ->processando_cmpq
 processando_cmpq    ;cmp_passa&cmp_passa          ->sign_qualidade
 sign_qualidade          ;sign_qualidade&sign_qualidade       ->parado
 parado,parar_esteira,chegar_cmp,parar_esteira,pegar_cmp,cmp_na_quald,processando_cmpt,sign_qualidade

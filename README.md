@@ -20,10 +20,18 @@ python principal.py
     Fita geral compartilhada, das quais cada maquinário faz sua interseção para interpretá-la.
     Buffers servem apenas para consulta, não atuando no posicionamento de componentes.
 
+##Automatos
 
-##Comandos:
+    ![controle]()
+    ![estoque]()
+    ![esteira]()
+    ![torno]()
+    ![qualidade]()
+    ![parafusadeira]()
 
-    .peca1,peca2,shut
+##Comandos
+
+    peca1,peca2,shut
 
 peca1: produzir peça 1
 peca2: produzir peça 2
